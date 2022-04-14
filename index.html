@@ -8,7 +8,6 @@
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.84.0">
   <title>RAS Code Labs</title>
-
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
   <!-- Font Awesome -->
 <link
@@ -27,24 +26,6 @@ rel="stylesheet"
 />
   <!-- Bootstrap core CSS -->
   <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-  </style>
-
-
   <!-- Custom styles for this template -->
   <link href="./css/carousel.css" rel="stylesheet">
 </head>
@@ -54,9 +35,8 @@ rel="stylesheet"
   <header>
     <nav class="navbar navbar-custom navbar-expand-md navbar-dark fixed-top">
       <div id="top-left" class="container-fluid">
-        <a class="navbar-brand" id="custom-text" href="index.html">RAS CODE LABS</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" id="custom-text" href="index.html"><img style="height: 40px; width: 280px;" src="./Pictures/RASCL_LOGO.jpeg"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
@@ -75,7 +55,6 @@ rel="stylesheet"
       </div>
     </nav>
   </header>
-
   <main>
 
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -106,37 +85,65 @@ rel="stylesheet"
     <div class="container marketing">
 
       <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img src="./Pictures/1.jpeg" class="bd-placeholder-img rounded-circle" width="140" height="140"
+      <div class="row row-cols-5" style="justify-content: center;">
+        <div class="col" style="justify-content: center;">
+          <img src="./Pictures/1.jpeg" class="bd-placeholder-img rounded-circle displayed" width="140" height="140"
             aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
           <title>Service Name</title>
           <rect width="100%" height="100%" fill="#777" />
 
-          <h2>Highlight 1</h2>
-          <p>Some representative placeholder content for the first service.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img src="./Pictures/2.jpeg" class="bd-placeholder-img rounded-circle" width="140" height="140"
+          <h5 class="center">Digital Transformation Consulting</h5>
+          <button type="button" class="btn btn-secondary displayed" data-toggle="collapse" data-target="#highlight1">View Details</button>
+          <div class="collapse" id="highlight1">
+            <p class="card-text center">Our engineers build and deploy the infrastructure that powers mission-critical systems across government and enterprise. Using a top-down design methodology, we ensure that the individual components and layers of a system work harmoniously with the overall architecture.</p>
+          </div>
+        </div>
+        <div class="col">
+          <img src="./Pictures/2.jpeg" class="bd-placeholder-img rounded-circle displayed" width="140" height="140"
             aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
           <title>Service Name</title>
           <rect width="100%" height="100%" fill="#777" />
 
-          <h2>Highlight 2</h2>
-          <p>Some representative placeholder content for the second service.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img src="./Pictures/3.jpeg" class="bd-placeholder-img rounded-circle" width="140" height="140"
+          <h5 class="center">Business Process Management and Optimisation</h5>
+          <button type="button" class="btn btn-secondary displayed" data-toggle="collapse" data-target="#highlight2">View Details</button>
+          <div class="collapse" id="highlight2">
+            <p class="card-text center">When it comes to managing information, most business processes are sub-optimal and inefficient. At RASCL, we have years of experience in designing, building, and deploying Process Automation solution and systems. </p>
+          </div>
+        </div>
+        <div class="col">
+          <img src="./Pictures/3.jpeg" class="bd-placeholder-img rounded-circle displayed" width="140" height="140"
             aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
           <title>Service Name</title>
           <rect width="100%" height="100%" fill="#777" />
 
-          <h2>Highlight 3</h2>
-          <p>Some representative placeholder content for the third service.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
+          <h5 class="center">Application and Infrastructure Support Management</h5>
+          <button type="button" class="btn btn-secondary displayed" data-toggle="collapse" data-target="#highlight3">View Details</button>
+          <div class="collapse" id="highlight3">
+            <p class="card-text center">We provide strategic, long-term support for infrastructure and applications. Using proven methodologies for service delivery and project management, we ensure the security, reliability, and availability of our clients’ systems.</p>
+          </div>
+        </div><div class="col">
+          <img src="./Pictures/4.jpeg" class="bd-placeholder-img rounded-circle displayed" width="140" height="140"
+            aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Service Name</title>
+          <rect width="100%" height="100%" fill="#777" />
+
+          <h5 class="center">Application, Data, and Technology Consulting</h5>
+          <button type="button" class="btn btn-secondary displayed" data-toggle="collapse" data-target="#highlight4">View Details</button>
+          <div class="collapse" id="highlight4">
+            <p class="card-text center">We work alongside clients to collaborate on growth of your business applications, data and the technology open to customer’s purpose-driven imperatives, define new ecosystems, and redefine how work gets done.</p>
+          </div>
+        </div><div class="col">
+          <img src="./Pictures/5.jpeg" class="bd-placeholder-img rounded-circle displayed" width="140" height="140"
+            aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Service Name</title>
+          <rect width="100%" height="100%" fill="#777" />
+
+          <h5 class="center">Workforce and Contractor Management</h5>
+          <button type="button" class="btn btn-secondary displayed" data-toggle="collapse" data-target="#highlight5">View Details</button>
+          <div class="collapse" id="highlight5">
+            <p class="card-text center">Our technology services and system integration expertise are available as standalone solutions. From generic to customisable payroll software to cloud workforce management systems, our SaaS products offer the efficiency required to automate the procure to pay process. We can engage contractors on behalf of your organisation.</p>
+          </div>
+        </div>
       </div><!-- /.row -->
 
 
@@ -156,7 +163,7 @@ rel="stylesheet"
             together, grow together and rethink what’s possible together.
           </p>
           <p>
-            At RAS Code Labs (RASCL), we help to form a large network of SMEs with their contingent
+            At RAS Code Labs, we help to form a large network of SMEs with their contingent
             workforce needs every day and RASCL principally provides five sets of core services to
             support those challenging initiatives.
           <ul>
@@ -313,7 +320,7 @@ rel="stylesheet"
       <!-- Grid container -->
     
       <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <div class="text-center p-3 navbar-custom">
         © 2022 Copyright:
         <a class="text-white">RAS Code Labs</a>
       </div>
@@ -324,93 +331,8 @@ rel="stylesheet"
 
 
   <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 
 </body>
-<!-- <div data-ux="Block" data-field-id="formEmail" class="x-el x-el-div c1-1 c1-2 c1-b c1-5w mx-field editable-element"
-  data-field-path="properties.formEmail" data-field-kind="Email"><svg viewBox="0 0 24 24" fill="currentColor" width="22"
-    height="22" data-ux="Icon" class="x-el x-el-svg c1-1 c1-2 c1-8x c1-t c1-35 c1-1j c1-8y c1-8z c1-1u c1-b c1-5w">
-    <path fill-rule="evenodd"
-      d="M19.219 5.22a.75.75 0 0 0-1.061 0l-5.939 5.939-5.939-5.94a.75.75 0 1 0-1.061 1.062l5.939 5.939-5.939 5.939a.752.752 0 0 0 0 1.06.752.752 0 0 0 1.061 0l5.939-5.938 5.939 5.939a.75.75 0 1 0 1.061-1.061l-5.939-5.94 5.939-5.938a.75.75 0 0 0 0-1.061">
-    </path>
-  </svg>
-  <h4 role="heading" aria-level="4" data-ux="Heading" data-typography="HeadingDelta"
-    class="x-el x-el-h4 c1-1 c1-2 c1-1b c1-13 c1-7g c1-x c1-v c1-u c1-w c1-1d c1-9l c1-d c1-m c1-f c1-2a c1-2b c1-11 c1-b c1-1f">
-    RAS Code Labs</h4>
-  <div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-3 c1-8r c1-l c1-90 c1-4t c1-7o c1-4s c1-b c1-5w">
-    <p data-ux="Text" data-typography="BodyAlpha"
-      class="x-el x-el-p c1-1 c1-2 c1-1b c1-13 c1-3i c1-u c1-w c1-8r c1-91 c1-92 c1-89 c1-93 c1-94 c1-95 c1-96 c1-b c1-1f">
-      Hi! Let us know how we can help and we’ll respond shortly.</p><svg viewBox="0 0 24 24" fill="currentColor"
-      width="24" height="24" data-ux="Icon"
-      class="x-el x-el-svg c1-1 c1-2 c1-97 c1-18 c1-35 c1-98 c1-99 c1-1j c1-9a c1-9b c1-9c c1-b c1-5w">
-      <path
-        d="M0.342304 14.5C7.35025 6.3293 3.35025 0.829295 0 0.0.0 0.0 5.4 2.1 32.3502 0.329295C32.3503 3.8293 -3.13481 20.7261 0.342304 14.5Z">
-      </path>
-    </svg>
-  </div>
-  <div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-g c1-2d c1-2b c1-2e c1-2a c1-b c1-5w">
-    <form aria-live="polite" data-ux="Form" class="x-el x-el-form c1-1 c1-2 c1-w c1-b c1-5w"><input type="text"
-        name="_app_id" autocomplete="off" tabindex="-1" value="" style="display: none;">
-      <div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-4n c1-b c1-5w">
-        <div data-ux="Block" data-field-id="formFields.label" data-field-route="/form/0"
-          class="x-el x-el-div c1-1 c1-2 c1-b c1-5w">
-          <div data-ux="InputFloatLabel" type="text" data-aid="MESSAGING_FORM_NAME"
-            class="x-el x-el-div c1-1 c1-2 c1-l c1-b c1-5w"><input role="textbox" aria-multiline="false" type="text"
-              data-ux="InputFloatLabel" id="input226" data-aid="MESSAGING_FORM_NAME" data-typography="BodyAlpha"
-              class="x-el x-el-input c1-1 c1-2 c1-3 c1-63 c1-4 c1-7q c1-7r c1-4x c1-7s c1-5d c1-64 c1-38 c1-39 c1-7t c1-4z c1-b c1-7e c1-5w c1-1f c1-7u c1-7v c1-7w c1-7x c1-7y c1-9g c1-80 c1-81 c1-9h c1-83"
-              value=""><label data-ux="InputFloatLabelLabel" for="input226" data-typography="BodyAlpha"
-              class="x-el x-el-label c1-1 c1-2 c1-18 c1-1b c1-13 c1-1j c1-84 c1-85 c1-86 c1-87 c1-b c1-7e c1-5w c1-1f">Name*</label>
-          </div>
-        </div>
-      </div>
-      <div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-4n c1-b c1-5w">
-        <div data-ux="Block" data-field-id="formFields.label" data-field-route="/form/1"
-          class="x-el x-el-div c1-1 c1-2 c1-b c1-5w">
-          <div data-ux="InputFloatLabel" type="text" data-aid="MESSAGING_FORM_EMAIL"
-            class="x-el x-el-div c1-1 c1-2 c1-l c1-b c1-5w"><input role="textbox" aria-multiline="false" type="text"
-              data-ux="InputFloatLabel" id="input227" data-aid="MESSAGING_FORM_EMAIL" data-typography="BodyAlpha"
-              class="x-el x-el-input c1-1 c1-2 c1-3 c1-63 c1-4 c1-7q c1-7r c1-4x c1-7s c1-5d c1-64 c1-38 c1-39 c1-7t c1-4z c1-b c1-7e c1-5w c1-1f c1-7u c1-7v c1-7w c1-7x c1-7y c1-9g c1-80 c1-81 c1-9h c1-83"
-              value=""><label data-ux="InputFloatLabelLabel" for="input227" data-typography="BodyAlpha"
-              class="x-el x-el-label c1-1 c1-2 c1-18 c1-1b c1-13 c1-1j c1-84 c1-85 c1-86 c1-87 c1-b c1-7e c1-5w c1-1f">Email*</label>
-          </div>
-        </div>
-      </div>
-      <div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-4n c1-b c1-5w">
-        <div data-ux="Block" data-field-id="formFields.label" data-field-route="/form/2"
-          class="x-el x-el-div c1-1 c1-2 c1-b c1-5w"><textarea role="textbox" aria-multiline="true" rows="4"
-            aria-label="How can we help?*" data-ux="InputTextArea" placeholder="How can we help?*"
-            data-aid="How can we help?" data-typography="BodyAlpha"
-            class="x-el x-el-textarea c1-1 c1-2 c1-3 c1-63 c1-4 c1-7q c1-7r c1-4x c1-7s c1-5d c1-64 c1-38 c1-39 c1-m c1-n c1-88 c1-b c1-7e c1-5w c1-1f c1-7u c1-7v c1-7w c1-83"></textarea>
-        </div>
-      </div>
-      <div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-4n c1-b c1-5w">
-        <div data-ux="Block" data-field-id="formFields.label" data-field-route="/form/3"
-          class="x-el x-el-div c1-1 c1-2 c1-b c1-5w">
-          <div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-4o c1-b c1-5w"><button data-ux-btn="primary"
-              data-ux="ButtonPrimary" type="submit" data-aid="MESSAGING_SUBMIT_BUTTON_REND"
-              data-traffic2="pandc.vnext.editor_preview.submit_contact_form.click"
-              data-tccl="ux2.contact.submit_form.click,click" state="default" data-typography="ButtonAlpha"
-              class="x-el x-el-button c1-2v c1-2 c1-1u c1-59 c1-5a c1-r c1-4l c1-4o c1-1t c1-13 c1-1b c1-l c1-1a c1-1k c1-2r c1-4u c1-5b c1-4z c1-5c c1-5d c1-1d c1-d c1-b c1-4a c1-4j c1-5w c1-5e">Send</button>
-          </div>
-        </div>
-      </div>
-      <div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-5b c1-n c1-4o c1-b c1-5w">
-        <p data-ux="DetailsMinor" data-typography="DetailsBeta"
-          class="x-el x-el-p c1-1 c1-2 c1-1b c1-13 c1-3i c1-u c1-w c1-b c1-5v c1-9s c1-1f">This site is protected by
-          reCAPTCHA and the Google <a rel="noopener" role="link" aria-haspopup="true" data-ux="Link" target="_blank"
-            href="https://policies.google.com/privacy" data-typography="LinkAlpha"
-            class="x-el x-el-a c1-1r c1-1s c1-1t c1-1b c1-13 c1-8c c1-1u c1-b c1-9i c1-9s c1-1z c1-9j c1-9k">Privacy
-            Policy</a> and <a rel="noopener" role="link" aria-haspopup="true" data-ux="Link" target="_blank"
-            href="https://policies.google.com/terms" data-typography="LinkAlpha"
-            class="x-el x-el-a c1-1r c1-1s c1-1t c1-1b c1-13 c1-8c c1-1u c1-b c1-9i c1-9s c1-1z c1-9j c1-9k">Terms of
-            Service</a> apply.</p>
-        <style>
-          .grecaptcha-badge {
-            visibility: hidden;
-          }
-        </style>
-      </div>
-    </form>
-  </div>
-</div> -->
 </html>
