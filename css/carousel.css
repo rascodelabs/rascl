@@ -32,14 +32,13 @@ body {
 .logo {
   display: inline;
   position: absolute;
-  top: 1em;
+  top: 0.3em;
+  height: 50%;
+  width: 50%;
 }
-@media (max-width: 767px) { 
+@media (max-width: 600px) { 
   .logo {
-      top: 0.3em;
-      left: 0px;
-      right: 0;
-      width:100%;
+      padding-left: 0;
       
     }
   }
@@ -47,6 +46,7 @@ body {
   background-color: #10222e;
 }
 .contact-us {
+  background-color: #10222e;
   color: white
 }
 #top-left{
@@ -63,6 +63,12 @@ body {
   margin-right: 150px;
 }
 
+.input-box {
+  height: 100%; width:100%;border:1px solid; padding-left: 20px; border-color: white;
+}
+.message-box {
+  height: 100%; width:100%; border:1px solid;padding-left: 20px;padding-top: 10px; border-color: white;
+}
 .collapse ul li:active .underline {
   transition: none;
   background-color: rgba(255,255,255,0.76);
