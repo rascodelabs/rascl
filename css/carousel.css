@@ -26,6 +26,25 @@ body {
 }
 .navbar-custom {
   background-color: #10222e;
+  height: 50px;
+
+}
+.logo {
+  display: inline;
+  position: absolute;
+  top: 1em;
+}
+@media (max-width: 767px) { 
+  .logo {
+      top: 0.3em;
+      left: 0px;
+      right: 0;
+      width:100%;
+      
+    }
+  }
+.primary-color{
+  background-color: #10222e;
 }
 .contact-us {
   color: white
